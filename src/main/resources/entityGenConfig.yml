@@ -6,13 +6,9 @@ jdbcSettings:
 
 packageName: "com.example.entity"
 
-# ---------------------------------------------------------
-# *** Rules for table/class name conversion ***
+# for MS Windows : full path need
+outputDirectory: "/workspace/GenerateJpaEntity/src/main/java"
 
-# If you need some rules that convert table names to entity class names, list the mapping rules as below.
-#   - array of ClassNameRule objects
-#     - tableName: table name (full name, case sensitive)
-#     - className: Java class name to be used (you cannot include package namme in front of the class name)
 classNameRules:
   - tableName: "posts"
     className: "Posts"
